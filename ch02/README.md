@@ -22,14 +22,14 @@ socket本质是编程接口(API), 对TCP/IP的封装，然后应用层程序直�
 
 ## 5.socket通信模型
 
-#### 建立TCP/IP连接的过程(三次握手)
+#### (1)建立TCP/IP连接的过程(三次握手)
 ![img/socket-02.jpg](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-02.jpg)
 
-#### 交换数据的过程
+#### (2)交换数据的过程
 ![img/socket-03.jpg](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-03.jpg)
 
-#### TCP/IP连接关闭的过程(四次挥手)
+#### (3)TCP/IP连接关闭的过程(四次挥手)
 ![img/socket-04.jpg](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-04.jpg)
 
-
+## TODO
 这一节只对socket作了一些介绍，下一节将进行实际的代码编写

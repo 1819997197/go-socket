@@ -10,7 +10,7 @@ TCP-CS并发服务器：
 
 	3.  for 循环 阻塞监听 客户端连接事件 	conn := listener.Accept()
 
-	4. 创建 go程 对应每一个 客户端进行数据通信	go HandlerConnet()
+	4. 创建 go程 对应每一个 客户端进行数据通信	go handlerConn()
 
 	5. 实现 handlerConn(conn net.Conn)
 
@@ -49,5 +49,5 @@ Run the client
 go run client.go
 ```
 
-
+## TODO
 服务端可并发接收多个客户端请求，所有处理逻辑放在一个文件里面，不利于后续的扩展，下一节将会吧服务端面向interface来实现。
