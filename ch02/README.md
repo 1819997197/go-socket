@@ -18,15 +18,15 @@ socket本质是编程接口(API), 对TCP/IP的封装，然后应用层程序直�
 ```
 
 ## 4.socket在网络中所处的位置
-![Image text](https://github.com/1819997197/micro/blob/master/ch07/ch07.png)
+![Image text](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-01.jpg)
 
 ## 5.socket通信模型
 
 #### 建立TCP/IP连接的过程(三次握手)
-![Image text](https://github.com/1819997197/micro/blob/master/ch07/ch07.png)
+![Image text](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-02.jpg)
 
 #### 交换数据的过程
-![Image text](https://github.com/1819997197/micro/blob/master/ch07/ch07.png)
+![Image text](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-03.jpg)
 
 #### TCP/IP连接关闭的过程(四次挥手)
-![Image text](https://github.com/1819997197/micro/blob/master/ch07/ch07.png)
+![Image text](https://github.com/1819997197/go-socket/blob/master/ch02/img/socket-04.jpg)
