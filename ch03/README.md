@@ -1,7 +1,7 @@
 # socket编程
 
 ## 1.原理
-![Image text](https://github.com/1819997197/go-socket/blob/master/ch03/img/socket-01.png)
+![img/socket-01.png](https://github.com/1819997197/go-socket/blob/master/ch03/img/socket-01.png)
 
 ## 2.服务端
 ```
@@ -44,5 +44,6 @@ Run the client
 ```
 go run client.go
 ```
+
 
 服务端只运行了一次，就结束了进程。显然达不到要求，下一节中，将会调整为并发服务端，可接收多个客户端请求
