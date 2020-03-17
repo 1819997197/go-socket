@@ -1,1 +1,1 @@
-# 互联网协议简介(未完)
+# 互联网协议简介(详细信息见 internet protocol.docx, 未完)

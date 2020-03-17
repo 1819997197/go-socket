@@ -12,7 +12,7 @@ TCP-CS并发服务器：
 
 	4. 创建 go程 对应每一个 客户端进行数据通信	go HandlerConnet()
 
-	5. 实现 HandlerConnet(conn net.Conn)
+	5. 实现 handlerConn(conn net.Conn)
 
 		1) defer conn.Close()
 
@@ -36,7 +36,7 @@ TCP-CS并发客户端：
 	发送数据时，默认在结尾自带换行键
 ```
 
-## 4.Usage
+## 3.Usage
 
 Run the service
 ```
