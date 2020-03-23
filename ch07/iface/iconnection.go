@@ -9,6 +9,3 @@ type IConnection interface {
 	GetConnID() uint32       //获取当前连接ID
 	RemoteAddr() net.Addr    //获取远程客户端地址信息
 }
-
-// 定义一个统一处理链接业务的接口
-type HandFunc func(net.Conn, []byte, int) error
