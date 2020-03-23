@@ -2,7 +2,7 @@ package impl
 
 import (
 	"fmt"
-	"go-socket/ch06/iface"
+	"go-socket/ch07/iface"
 	"net"
 )
 
@@ -10,6 +10,7 @@ type Server struct {
 	IP       string //IP
 	Port     int    //端口
 	Protocol string //协议:tcp
+	Router   iface.IRouter
 }
 
 func NewServer() iface.IServer {
@@ -17,6 +18,7 @@ func NewServer() iface.IServer {
 		IP:       "0.0.0.0",
 		Port:     8002,
 		Protocol: "tcp",
+		Router:   nil,
 	}
 }
 
@@ -48,7 +50,7 @@ func (s *Server) Start() {
 			fmt.Println("服务端通信socket创建完成！客户端IP:" + conn.RemoteAddr().String())
 
 			// 处理连接请求的业务
-			dealConn := NewConnection(conn, cid, handleAPI)
+			dealConn := NewConnection(conn, cid, s.Router)
 			cid++
 			go dealConn.Start()
 		}
@@ -68,8 +70,6 @@ func (s *Server) Run() {
 	select {}
 }
 
-func handleAPI(conn net.Conn, data []byte, n int) error {
-	fmt.Println(conn.RemoteAddr().String(), "收到数据: ", string(data[:n]))
-	_, err := conn.Write(data[:n])
-	return err
+func (s *Server) AddRouter(router iface.IRouter) {
+	s.Router = router
 }
