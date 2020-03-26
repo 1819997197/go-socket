@@ -4,7 +4,7 @@
 
 Run the service
 ```
-go run service.go
+go run service.go router.go
 ```
 
 Run the client
