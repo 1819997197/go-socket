@@ -21,3 +21,5 @@
 #### ch10: server、connection、msghandle(router、request、message、data封包) 请求服务端，业务方法处理完，回传客户端数据读写分离
 
 #### ch11: worker工作池(请求消息通过消息队列来处理)
+
+#### ch12: 链接管理(connManager)，可设置服务端最大链接数&可配置链接创建/断开Hook方法
