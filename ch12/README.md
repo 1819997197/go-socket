@@ -14,4 +14,4 @@ go run client.go
 ```
 
 ## TODO
-worker工作池(多任务)
+链接管理
