@@ -1,0 +1,5 @@
+# 目前先按一级目录配置，后续可改为二级目录
+worker-pool-size: 5
+task-queue-max-size: 1024
+conn-link-max-size: 2048
+msg-buff-chan-max-size: 1024
